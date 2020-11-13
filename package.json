@@ -1,0 +1,27 @@
+{
+  "name": "notetaker",
+  "version": "1.0.0",
+  "description": "Application to write, save and delete notes. Uses an express backend to save and retrive note data from a JSON file.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johndexteriv/noteTaker.git"
+  },
+  "keywords": [
+    "express",
+    "notetaker"
+  ],
+  "author": "Dexter Garner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johndexteriv/noteTaker/issues"
+  },
+  "homepage": "https://github.com/johndexteriv/noteTaker#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
