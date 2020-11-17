@@ -5,8 +5,8 @@ const { v4: uuidv4 } = require("uuid");
 
 module.exports = function (app) {
 	app.get("/api/notes", function (req, res) {
-		// respond w/ db.json array
-		res.json(noteData);
+		// respond w/ file in following __dirname ../db/db.json
+		res.sendFile(path.join(__dirname, "../db/db.json"));
 	});
 	app.post("/api/notes", function (req, res) {
 		// sets a new not variable to request body and adds random id via uuid npm package
