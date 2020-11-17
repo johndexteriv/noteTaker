@@ -3,7 +3,7 @@ const app = express();
 var bodyParser = require("body-parser");
 var PORT = process.env.PORT || 8080;
 var path = require("path");
-
+// Sets the static page to the public folder
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
