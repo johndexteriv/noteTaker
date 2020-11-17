@@ -9,7 +9,7 @@ module.exports = function (app) {
 		res.sendFile(path.join(__dirname, "../db/db.json"));
 	});
 	app.post("/api/notes", function (req, res) {
-		// sets a new not variable to request body and adds random id via uuid npm package
+		// sets a new note variable to request body and adds unique id via uuid npm package
 		var newNote = req.body;
 		newNote.id = uuidv4();
 		// Read file db.json parse data and then push new note
