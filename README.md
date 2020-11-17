@@ -1,4 +1,4 @@
-# noteTaker
+# Express JS NoteTaker
 
 ## Description
 
